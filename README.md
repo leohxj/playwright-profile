@@ -1,5 +1,7 @@
 # playwright-profile
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 An independent TypeScript CLI for versioned browser storage snapshots. It uses the **unmodified, locally pinned `@playwright/cli` 0.1.24** for every browser operation, including `run-code`. It never attaches to your daily browser, changes its files, or asks it to close.
 
 A source is a macOS Chrome or Chrome Beta profile. A target is an independent headless Chromium profile on macOS or Linux, or an explicitly configured SSH endpoint running this same CLI. A refresh exports a new source version. A sync activates that version on a target. A session loads the latest target version before returning control to the agent.
