@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "kind": "actual-upstream-disposable-profile",
+  "upstream": "0.1.24",
+  "checks": [
+    {
+      "name": "headless isolated open with hostile MCP environment scrubbed",
+      "status": "passed"
+    },
+    {
+      "name": "run-code storageState writes file without require/process or secret stdout",
+      "status": "passed"
+    },
+    {
+      "name": "cross-cwd invocation through receipt workspace",
+      "status": "passed"
+    },
+    {
+      "name": "actual macOS synthetic persistent/session/empty cookie clone round-trip and unchanged source",
+      "status": "passed"
+    },
+    {
+      "name": "actual disposable encrypted-cookie failure retains old version and cleans clone",
+      "status": "passed"
+    },
+    {
+      "name": "actual synthetic IndexedDB record round-trip through run-code storage APIs",
+      "status": "passed"
+    },
+    {
+      "name": "actual persistent target loads synthetic state with unmodified run-code",
+      "status": "passed"
+    },
+    {
+      "name": "concurrent target start rejected",
+      "status": "passed"
+    },
+    {
+      "name": "refresh does not mutate occupied session",
+      "status": "passed"
+    },
+    {
+      "name": "restart loads latest version in clean profile after origin scope shrink",
+      "status": "passed"
+    },
+    {
+      "name": "owned target stop and profile cleanup",
+      "status": "passed"
+    }
+  ],
+  "limits": [
+    "No personal credentials",
+    "No real-site E2E or login",
+    "No actual SSH server",
+    "Synthetic storage does not prove personal decryption"
+  ],
+  "status": "passed"
+}

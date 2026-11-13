@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "kind": "isolated-protocol-and-failure-injection",
+  "checks": [
+    {
+      "name": "cookie filtering honors exact host and subdomain boundaries",
+      "status": "passed"
+    },
+    {
+      "name": "unsafe profile paths, non-origin URLs and extra credential fields rejected",
+      "status": "passed"
+    },
+    {
+      "name": "checksum failure and suspicious empty cookie/origin replacement retain old version",
+      "status": "passed"
+    },
+    {
+      "name": "cookie expiry bounds and required stored-cookie fields match pinned upstream validation before activation",
+      "status": "passed"
+    },
+    {
+      "name": "loading checks credential file checksum independently from envelope",
+      "status": "passed"
+    },
+    {
+      "name": "atomic operation lock rejects overlapping changes",
+      "status": "passed"
+    },
+    {
+      "name": "concurrent current readers see complete immutable versions",
+      "status": "passed"
+    },
+    {
+      "name": "private directories 0700 and credential files 0600",
+      "status": "passed"
+    },
+    {
+      "name": "identity loss and known nonempty source plaintext becoming empty are rejected",
+      "status": "passed"
+    },
+    {
+      "name": "encrypted source records allow legitimate empty cookie values without inferring plaintext from ciphertext length",
+      "status": "passed"
+    },
+    {
+      "name": "SQLite ONLINE BACKUP from private staged DB, encrypted identity metadata, source byte hashes unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "live WAL included without source SHM writes or creation",
+      "status": "passed"
+    },
+    {
+      "name": "corrupt SQLite copy fails and prior version remains valid",
+      "status": "passed"
+    },
+    {
+      "name": "missing cookie database rejected",
+      "status": "passed"
+    },
+    {
+      "name": "source symlink rejected without following it",
+      "status": "passed"
+    },
+    {
+      "name": "same display names remain distinct by directory, mismatched browser app rejected",
+      "status": "passed"
+    },
+    {
+      "name": "receiver validates envelope and reports origin list without values",
+      "status": "passed"
+    },
+    {
+      "name": "receiver rejects correctly checksummed invalid expiry and preserves previous current version",
+      "status": "passed"
+    },
+    {
+      "name": "injected workspace preparation failure removes the newly owned lock before browser launch",
+      "status": "passed"
+    },
+    {
+      "name": "SSH local simulation transfers latest state with shell-safe quote in root",
+      "status": "passed"
+    },
+    {
+      "name": "SSH interruption and checksum simulation retain remote current version",
+      "status": "passed"
+    },
+    {
+      "name": "failed receiver receipts expose no state values",
+      "status": "passed"
+    },
+    {
+      "name": "receiver rejects unknown target",
+      "status": "passed"
+    },
+    {
+      "name": "unknown occupancy lock is reported and retained",
+      "status": "passed"
+    },
+    {
+      "name": "profile-owning process simulation prevents stop failure from freeing lock",
+      "status": "passed"
+    },
+    {
+      "name": "explicit stop recovers stale owned session after process exit",
+      "status": "passed"
+    },
+    {
+      "name": "unowned nonempty data root rejected before chmod or writes",
+      "status": "passed"
+    },
+    {
+      "name": "SIGTERM during injected copy cleans private temp and retains previous source version",
+      "status": "passed"
+    }
+  ],
+  "limits": [
+    "SSH uses a local fake executable, no server contacted",
+    "SQLite uses synthetic data",
+    "No personal credentials or real-site E2E"
+  ],
+  "status": "passed"
+}

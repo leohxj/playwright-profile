@@ -1,0 +1,63 @@
+node_modules/
+dist/
+.DS_Store
+.playwright/
+.playwright-cli/
+*.tgz
+
+.verification-venv/
+
+# Local credentials and credential-bearing tool configuration.
+.env*
+.npmrc
+.netrc
+.pypirc
+.ssh/
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+
+# Browser exports and copied profiles contain credentials.
+.auth/
+.playwright-profile/
+.playwright-profile-data/
+user-data/
+browser-profile/
+browser-profiles/
+storage-state*.json
+storageState*.json
+state.json
+envelope.json
+Cookies
+Cookies-*
+Local State
+Login Data
+Login Data-*
+IndexedDB/
+Local Storage/
+Session Storage/
+
+# Conventional in-repository private runtime roots and loose root config.
+# Custom --data-root directories must also stay outside the repository.
+/private-root/
+/private-data/
+/runtime/
+/config.json
+/sources/
+/targets/
+/receipts/
+/daemon/
+/upstream-global/
+/schedules/
+/tmp/
+
+# Runtime logs, not verification source or JSON check receipts.
+*.log
+*.log.*
+__pycache__/
+*.pyc

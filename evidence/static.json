@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "kind": "local-package-install",
+  "status": "passed",
+  "checks": [
+    "npm pack allowlist contains no credential files",
+    "Installed package bin --version returns the expected version",
+    "Installed package status with isolated private root"
+  ],
+  "limits": [
+    "No package publishing",
+    "No global installation",
+    "No browser launched"
+  ]
+}
